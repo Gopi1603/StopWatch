@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stopwatch Gopi</title>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+
+<body>
+    <div class="container">
+        <div class="stopwatch">
+
+            <h1>Stopwatch</h1>
+
+            <img src="stopwatch.png" alt="watch icon" class="icon">
+
+            <div class="time" id="time">00:00:00.00</div>
+
+            <div class="buttons">
+                <button id="startStopBtn">Start</button>
+                <button id="resetBtn">Reset</button>
+                <button id="lapBtn">+</button>
+            </div>
+
+            <div class="laps hidden" id="laps">
+                <div id="recentLap"></div>
+                <button id="showMoreLapsBtn" class="hidden" onclick="toggleLaps()" style="background-color: wheat;">Show More</button>
+                <div id="allLaps" class="hidden"></div>
+            </div>
+        </div>
+    </div>
+
+    
+    <a href="https://www.instagram.com/gopi_mandepudi_1603/?hl=en" class="round-button"><img src="me.jpg" alt="Link icon"></a>
+
+
+    <script src="app.js"></script>
+</body>
+</html>
